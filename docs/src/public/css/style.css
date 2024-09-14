@@ -12,9 +12,59 @@ header h1 {
     color: white;
     font-size: 2.5em;
     font-weight: 800;
+    scroll-behavior: smooth;
 }
 
 .navbar-nav .nav-link {
     color: white;
     font-weight: 800;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Estilos para o carrossel */
+.carousel {
+    display: flex;
+    width: 80%;
+    border: 1px solid green;
+    margin-top: 20px;
+    height: 50vh;
+    position: relative;
+}
+
+/* Estilos para itens do carrossel e parágrafos */
+.carousel-item, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 500px;
+    height: 500px;
+}
+
+/* Estilos para o título do carrossel */
+.carousel-title {
+    margin-bottom: -20px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* Estilos para os ícones de controle do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Tamanho dos ícones de controle do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
 }
